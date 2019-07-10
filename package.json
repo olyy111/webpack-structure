@@ -1,9 +1,11 @@
 {
   "scripts": {
-    "build": "webpack"
+    "build": "webpack --config build/webpack.config.prod.js",
+    "dev": "webpack --config build/webpack.config.dev.js"
   },
   "devDependencies": {
     "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5"
+    "webpack-cli": "^3.3.5",
+    "webpack-merge": "^4.2.1"
   }
 }
