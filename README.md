@@ -22,12 +22,20 @@ yarn server
 ```
 
 ## 1. 公共
-
+0. 起步
+``` bash
+yarn add -D webpack webpack-cli
+```
+建立文件 src/index.js
+package.json添加命令`"build": "webpack"`
+运行`yarn build`
 1. 打包文件在html里面自动引入
+
+
 2. ts编译, babel编译, polyfill, 
 3. 加入 css编译, scss less等预处理编译, css module处理
 4. 加入后缀解析和别名
-5. 生产: 指定html上面的publicPath
+5. 指定html上面的publicPath
 6. 引入dll优化编译性能
 
 ## 2. 开发
